@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.navbar-toggler.open-btn {
+    display: block !important;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -11,6 +15,10 @@ body {
     padding: 0;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
+}
+
+.col-lg-12 {
+    background-color: #fff;
 }
 
 #header {
@@ -15055,7 +15063,7 @@ ul.smothscroll a:hover {
 }
 
 .tp-site-header .menu-close {
-    display: none
+    display: none !important
 }
 
 @media(max-width:991px) {
@@ -15070,7 +15078,7 @@ ul.smothscroll a:hover {
         border: 0;
         padding: 5px 10px;
         outline: 0;
-        position: relative;
+        position: relative !important;
         z-index: 20
     }
 
@@ -15082,7 +15090,7 @@ ul.smothscroll a:hover {
     .tp-site-header .mobail-menu button span {
         background-color: #fff;
         width: 20px;
-        display: block;
+        display: block !important;
         height: 2px;
         margin-bottom: 5px
     }
@@ -15150,7 +15158,7 @@ ul.smothscroll a:hover {
     }
 
     .tp-site-header .menu-close {
-        display: block;
+        display: block !important;
         z-index: 99;
         background: none;
         color: #fff;
@@ -15297,7 +15305,7 @@ ul.smothscroll a:hover {
 }
 
 .mobileMenu {
-    position: fixed;
+    position: fixed !important;
     left: -250px;
     top: 0;
     z-index: 9999;
@@ -15340,7 +15348,7 @@ ul.smothscroll a:hover {
 }
 
 .responsivemenu ul {
-    display: block;
+    display: block !important;
     padding: 0
 }
 
@@ -15350,7 +15358,7 @@ ul.smothscroll a:hover {
 
 .responsivemenu ul a,
 .responsivemenu ul p {
-    display: block;
+    display: block !important;
     font-size: 16px;
     letter-spacing: 0;
     text-transform: capitalize;
@@ -15363,7 +15371,7 @@ ul.smothscroll a:hover {
 }
 
 .responsivemenu ul a:before {
-    position: absolute;
+    position: absolute !important;
     left: 0;
     top: 50%;
     width: 0;
@@ -15381,16 +15389,16 @@ ul.smothscroll a:hover {
     padding-left: 60px
 }
 
-.responsivemenu ul a.active:before,
+.responsivemenu ul a.active::before,
 .responsivemenu ul a:hover:before {
     width: 20px;
     opacity: 1;
-    visibility: visible;
+    visibility: visible !important;
     left: 35px
 }
 
 .responsivemenu ul p {
-    position: relative;
+    position: relative !important;
     margin-bottom: 0
 }
 
@@ -15404,11 +15412,11 @@ ul.smothscroll a:hover {
 }
 
 .responsivemenu li a {
-    position: relative
+    position: relative !important
 }
 
 .responsivemenu ul i {
-    position: absolute;
+    position: absolute !important;
     right: 40px;
     top: 15px
 }
@@ -15425,7 +15433,7 @@ ul.smothscroll a:hover {
 
 @media(max-width:992px) {
     .showmenu {
-        display: block;
+        display: block !important;
         width: 40px;
         height: 36px;
         text-align: center;
@@ -15446,8 +15454,8 @@ ul.smothscroll a:hover {
         margin: 0 auto 5px
     }
 
-    .mobileMenu {
-        display: block
+    . {
+        display: block !important;
     }
 }
 
@@ -15785,7 +15793,7 @@ ul.smothscroll a:hover {
 
 @media(max-width:767px) {
     .tp-hero-section-1 .visible-text {
-        display: none
+        display: flex;
     }
 }
 
@@ -16450,9 +16458,19 @@ ul.smothscroll a:hover {
 }
 
 @media(max-width:750px) {
-    .tp-testimonial-wrap .slick-track {
-        display: flex;
+    .tp-testimonial-wrap .slick-track  {
+        display: none;
     }
+}
+
+@media(max-width:750px) {
+    .tp-section-title {
+        display: none;
+    }
+}
+
+@media(max-width:750px) {
+
 }
 
 .tp-project-section .tp-project-wrap .tp-project-item .tp-project-img {
@@ -18410,6 +18428,16 @@ ul.smothscroll a:hover {
     }
 }
 
+.mobileMenu {
+    display: none !important;
+}
+
+
+    .mobileMenu:active {
+        display: block !important;
+    }
+
+
 @media (min-width:1200px) {
 
     .h1,
@@ -18450,4 +18478,26 @@ ul.smothscroll a:hover {
     .css-1k371a6 {
         position: absolute !important;
     }
+}
+
+@media (max-width: 750px) {
+    .iconss{
+        z-index: 1000;
+    }
+}
+
+.arrow {
+    background-color: white !important;
+}
+
+.smothscroll {
+    background-color: transparent;
+}
+
+.header-menu {
+    background-color: transparent;
+}
+
+.col-lg-12  li{
+    background-color: transparent;
 }
