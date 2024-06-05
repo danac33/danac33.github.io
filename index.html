@@ -20,39 +20,24 @@
                 <div class="row align-items-center">
                   <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
                     <div class="mobail-menu">
-                      <div>
-                        <div class="mobileMenu">
-                          <div class="menu-close">
-                            <div class="clox"><i class="ti-close"></i></div>
-                          </div>
-                          <ul class="responsivemenu">
-                            <ul class="MuiList-root MuiList-padding css-1ontqvh">
-                              <a>Home</a>
-                            </ul>
-                            <ul class="MuiList-root MuiList-padding css-1ontqvh">
-                              <a>About</a>
-                            </ul>
-                            <ul class="MuiList-root MuiList-padding css-1ontqvh">
-                              <a>Service</a>
-                            </ul>
-                            <ul class="MuiList-root MuiList-padding css-1ontqvh">
-                              <a>Portfolio</a>
-                            </ul>
-                            <ul class="MuiList-root MuiList-padding css-1ontqvh">
-                              <a>Blog</a>
-                            </ul>
-                            <ul class="MuiList-root MuiList-padding css-1ontqvh">
-                              <a>Contact</a>
-                            </ul>
-                          </ul>
-                        </div>
+                      <a href="javascript:void(0);" onclick="myFunction()">
                         <div class="showmenu">
-                          <button type="button" class="navbar-toggler open-btn">
+                          <button class="navbar-toggler open-btn">
                             <span class="icon-bar first-angle"></span><span class="icon-bar middle-angle"></span><span
                               class="icon-bar last-angle"></span>
                           </button>
                         </div>
-                      </div>
+                      </a>
+                        <div class="topnav">
+                          <div id="myLinks">
+                              <a href="#homee" onclick="scrollToSection('.home-s'); return false;">Home</a>
+                              <a href="#aboutt" onclick="scrollToSection('.about-s'); return false;">About</a>
+                              <a href="#servicee" onclick="scrollToSection('.service-s'); return false;">Service</a>
+                              <a href="#portofolioo" onclick="scrollToSection('.portfolio-s'); return false;">Portfolio</a>
+                              <a href="#blogg" onclick="scrollToSection('.blog-s'); return false;">Blog</a>
+                              <a href="#contactt" onclick="scrollToSection('.contact-s'); return false;">Contact</a>
+                          </div> 
+                        </div>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-6 col-6">
@@ -618,27 +603,29 @@
             <div class="row align-items-center">
               <div class="col-md-6 col-md-6 col-12">
                 <div class="form-group">
-                  <label>Name*</label><input type="text" name="name" class="form-control" placeholder="Your Name"
-                    value="" />
+                  <label>Name*</label><input id="sassy" type="text" name="name" class="form-control" placeholder="Your Name"
+                    value="" required/>
                 </div>
               </div>
               <div class="col-md-6 col-md-6 col-12">
                 <div class="form-group">
                   <label>Email*</label><input type="email" name="email" class="form-control" placeholder="Your Email"
-                    value="" />
+                    value="" required />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="fullwidth form-group">
-                  <label>Message*</label><textarea type="text" name="message" class="form-control"
-                    placeholder="Message"></textarea>
+                  <label>Message*</label><textarea id="sassy2" type="text" name="message" class="form-control"
+                    placeholder="Message" required></textarea>
                 </div>
               </div>
               <div class="col-md-5 order-md-1 order-2 col-12">
                 <div class="submit-area">
-                  <button type="submit" class="theme-btn" onclick="thx()" href="#homee">
+                  <a href="mailto:danac.opasni@gmail.com">
+                  <button type="submit" class="theme-btn" onclick="thx(inputt2)" href="#homee">
                     Submit now
                   </button>
+                  </a>
                   <div id="loader"><i class="ti-reload"></i></div>
                 </div>
               </div>
