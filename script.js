@@ -1,16 +1,50 @@
 let inputt2 = document.getElementById("sassy2");
 
-function thx(j) {
-      if (j.value.length == 0)
-       { 
-          return false; 
-       } else  {
-        alert("hvala na poruci")
-        return true;
-       }
-     
+var modal = document.getElementById("myModal");
 
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
 }
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+var modal2 = document.getElementById("myModal");
+
+var btn2 = document.getElementById("myBtn2");
+
+
+btn2.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+var modal3 = document.getElementById("myModal");
+
+var btn3 = document.getElementById("myBtn3");
+
+btn3.onclick = function() {
+  modal.style.display = "block";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
 
 function myFunction() {
   var x = document.getElementById("myLinks");
