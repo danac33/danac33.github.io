@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+.space {
+    margin-left: 521px;
+}
+
+.images-s {
+    width: 420px !important;
+    height: 200px !important;
+}
+
 @media (max-width: 750px) {
     .modal-body {
         margin-left: 10px;
